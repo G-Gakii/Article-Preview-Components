@@ -27,11 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![desktop-image](https://github.com/G-Gakii/Article-Preview-Components/blob/main/images/screenshot/Screenshot%202024-07-27%20at%2017.59.50.png)
+![mobile-image](https://github.com/G-Gakii/Article-Preview-Components/blob/main/images/screenshot/Screenshot%202024-07-27%20at%2018.00.13.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: (https://article-preview-components-bay.vercel.app)
 - Live Site URL: (http://127.0.0.1:5500/)
 
 ## My process
