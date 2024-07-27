@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --Grayish-Blue: hsl(212, 23%, 69%);
+  --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+}
+.container {
+  padding: 4em;
+  background-color: var(--Light-Grayish-Blue);
+  font-size: 0.8rem;
+  position: relative;
+}
+
+.card-body {
+  margin-top: 1.2em;
+}
+.card-title {
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 700;
+  padding: 0 1em;
+  font-size: 1em;
+}
+.card-text {
+  color: var(--Grayish-Blue);
+  font-weight: 500;
+  padding: 0 1em;
+  font-size: 1em;
+}
+.foot {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1em;
+  position: relative;
+}
+.profile_pic {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+.foot-middle {
+  margin-top: 0.5em;
+
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 700;
+  /* font-size: 0.8em; */
+}
+.date {
+  color: var(--Grayish-Blue);
+  font-weight: 500;
+  /* font-size: 0.8rem; */
+}
+.share {
+  width: 1.8em;
+  height: 1.8em;
+  border-radius: 50%;
+  background-color: var(--Light-Grayish-Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.share img {
+  width: 0.8em;
+  height: 0.8em;
+}
+.socials button {
+  padding: 1em 2em;
+  background-color: var(--Dark-Grayish-Blue);
+  color: var(--Light-Grayish-Blue);
+  border-radius: 10px;
+  border: none;
+  visibility: hidden;
+}
+.socials button span {
+  opacity: 0.5;
+  letter-spacing: 5px;
+}
+.socials button img {
+  margin: 0.5em;
+}
+@media screen and (min-width: 480px) {
+  .card-body {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 765px) {
+  .socials button {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  .card-body {
+    position: relative;
+  }
+  .share {
+    z-index: 1;
+    bottom: -0.1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+  }
+  .card-img-top {
+    width: 50%;
+  }
+  .socials button {
+    position: absolute;
+    top: 50%;
+    right: -12%;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .card-body {
+    font-size: 20px;
+  }
+}
